@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway'); /* == from google fonts ==*/
+
+/* CSS Reset */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+/*to make all elements 100% height*/
+	height: 100%;	
+}
+
+h1, h2, h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: none;
+	color: #944CA7;
+	text-transform: uppercase;
+
+}
+
+/*== NAV INFO HERE ==*/
+nav {
+	background: #333;
+	padding: 10px;
+	text-align: center;
+	position: fixed;
+	z-index: 999; /*== so it can be fixed in the z line ==*/
+	width: 100%;
+}
+
+
+/*== SECTION INFO HERE ==*/
+section {
+	width: 100%;
+	height: 100%;
+	position: relative; /*== parent is relative so children can be absolute ==*/
+}
+
+#s1 {
+	background: url(../images/pic4.jpg) center center fixed no-repeat;
+	background-size: cover;
+}
+
+#s1 header {
+/*	border: 1px solid red;*/
+	width: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%); /*== make it work in older versions of chrome and safari ==*/
+	transform: translate(-50%, -50%); /*== so it can be right in the middle ==*/
+	text-align: center;
+	background: white;
+	padding: 20px;
+}
+
+#s1 h1 {
+	font-size:70px;
+	line-height: 60px;
+}
+
+#s1 h2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+	color: #696060;
+}
+
+
+/*==SECTION 2 INFO HERE==*/
+
+#s2 {
+	background: #8C5589;
+	background-size: cover;
+	padding: 2%;/* ==dont' touch the board==*/
+	height: auto;
+}
+
+#s2 article {
+	width: 73%;
+	background: white;
+	float: left;
+	padding: 2%;
+	margin-right: 2%;
+}
+
+#s2 article h1 {
+	font-size: 45px;
+}
+
+#s2 article h2 {
+	font-size: 40px;
+}
+
+#s2 article p {
+	font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 2%;
+	color: #423F3F;
+}
+#s2 aside{
+	width: 25%;
+	background: white;
+	float: left;
+	padding: 2%;
+}
+
+#s2 aside h2 {
+	font-size: 32px;
+}
+
+#s2 aside p {
+	font-family: Constantia, Lucida Bright, DejaVu Serif, Georgia, serif;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 2%;
+	font-style: italic;
+}
+
+.clearfix {
+	clear: both;
+	}
+
+/*== FOOTER INFO HERE ==*/
+
+footer {
+	padding: 2%;
+	text-align: center;
+	color: white;
+	background: #333;
+	font-family: 'Raleway', sans-serif;
+}
